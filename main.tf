@@ -1,7 +1,7 @@
 provider "proxmox" {
-  endpoint = "https://192.168.111.180:8006/"
-  username = "root@pam"
-  password = "Par240XXX"
+  endpoint = "https://***.***.***.***:8006/"
+  username = "root@***"
+  password = "***"
   insecure = true
 
   ssh {
@@ -27,8 +27,8 @@ resource "proxmox_virtual_environment_vm" "ubuntu_vm" {
   initialization {
     ip_config {
       ipv4 {
-        address = "192.168.111.181/24"
-        gateway = "192.168.111.1"
+        address = "192.168.***.***/24"
+        gateway = "192.168.***.*"
       }
     }
 
